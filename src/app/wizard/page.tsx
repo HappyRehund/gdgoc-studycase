@@ -25,7 +25,7 @@ async function page() {
         <h1 className="text-center font-semibold text-3xl">
           Welcome, <span className="">{user.firstName}!</span>
         </h1>
-        <h2 className="mt-4 text-center text-cardcolor">
+        <h2 className="mt-4 text-center font-semibold text-[#171717] dark:text-cardcolor">
           Let &apos;s get started by setting up your currency
         </h2>
         <h3 className="mt-2 text-center text-sm font-semibold text-foreground">
