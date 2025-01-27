@@ -162,9 +162,9 @@ function History({ userSettings }: { userSettings: UserSettings }) {
               </ResponsiveContainer>
             )}
             {!dataAvailable && (
-              <Card className="flex h-80 flex-col items-center justify-center bg-cardbg">
+              <Card className="flex h-80 flex-col items-center justify-center bg-cardbg text-cardcolor">
                 No data for the selected period
-                <p className="text-sm text-foreground">
+                <p className="text-sm text-navselectedcolor">
                   Try selecting a different period or adding new transactions
                 </p>
               </Card>
@@ -204,8 +204,8 @@ function CustomTooltip({ active, payload, formatter }: any) {
         formatter={formatter}
         label="Balance"
         value={income - expense}
-        bgColor="bg-cardcolor"
-        textColor="text-foreground"
+        bgColor="bg-violet-500"
+        textColor="text-navselectedcolor"
       />
     </div>
   );
@@ -233,7 +233,7 @@ function TooltipRow({
     <div className="flex items-center gap-2">
       <div className={cn("h-4 w-4 rounded-full", bgColor)} />
       <div className="flex w-full justify-between">
-        <p className="text-sm text-foreground">{label}</p>
+        <p className="text-sm text-navselectedcolor">{label}</p>
         <div className={cn("text-sm font-bold", textColor)}>
           <CountUp
             duration={0.5}

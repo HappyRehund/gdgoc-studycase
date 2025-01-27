@@ -25,12 +25,12 @@ const items = [
     link: "/",
   },
   {
-    title: "transactions",
-    link: "/transactions",
-  },
-  {
     title: "manage",
     link: "/manage",
+  },
+  {
+    title: "transactions",
+    link: "/transactions",
   },
 ];
 
@@ -82,7 +82,7 @@ function MobileNavbar() {
 }
 function DesktopNavbar() {
   return (
-    <div className="hidden bg-background md:block">
+    <div className="hidden bg-background md:block" >
       <nav className="flex items-center justify-between py-2 px-6">
         <div className="flex min-h-16 items-center justify-between w-full">
           <div className="flex bg-foreground rounded-3xl shadow-lg gap-2 justify-between items-center">
@@ -159,8 +159,7 @@ function NavbarItem({ title, link }: { title: string; link: string }) {
         href={link}
         className={cn(
           "w-full justify-center gap-2 items-center px-4 lg:px-6 py-2 text-sm lg:text-lg font-semibold text-navcolor flex",
-          isActive && "text-navselectedcolor bg-background rounded-3xl border border-navselectedcolor",
-          title === "transactions" && "pr-0"
+          isActive && "text-navselectedcolor bg-background rounded-3xl border border-foreground",
         )}
       >
         <ArrowUpLeft className="w-3 h-3" />

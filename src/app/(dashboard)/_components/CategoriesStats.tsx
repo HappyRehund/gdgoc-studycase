@@ -96,7 +96,7 @@ function CategoriesCard({
             No data for the selected period
             <p
               className={cn(
-                isLoading ? "text-cardbg" : "text-foreground",
+                isLoading ? "text-cardbg" : "text-navselectedcolor",
                 "text-sm"
               )}
             >

@@ -93,8 +93,8 @@ export function CurrencyComboBox() {
             role="combobox"
             aria-expanded={open}
             className={cn(
-              "w-full justify-between font-semibold text-cardcolor",
-              userSettings.isFetching ? "bg-[#171717]" : "bg-background"
+              "w-full justify-between font-semibold",
+              userSettings.isFetching ? "bg-cardbg text-transparent" : "bg-[#f2f2f2] text-[#171717]"
             )}
             disabled={mutation.isPending}
           >
